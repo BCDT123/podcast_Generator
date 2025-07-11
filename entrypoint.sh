@@ -2,9 +2,9 @@
 
 echo "======================="
 
-git config --globan user.name "${GITHUB_ACTOR}"
-git config --globan user.email "${GITHUB_EMAIL}"
-git config --globan --add safe.directory /github/workspace
+git config --global user.name "${GITHUB_ACTOR}"
+git config --global user.email "${GITHUB_EMAIL}"
+git config --global --add safe.directory /github/workspace
 
 python3 /urs/bin/feed.py
 
